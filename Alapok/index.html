@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+	    <title>Ismétlés</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="style.css">
+		
+		<!-- css beállítások -->
+		<style>
+			h1{
+			color: green;
+			}
+			
+		</style>
+		
+	</head>
+	<!-- <body style="tulajdonság: értéke; tul2: értéke2;"> -->
+	<body style="background-color: lightblue; color: red">
+	<hr/>
+		<h1>Évelei ismétlés</h1>
+		
+		<h2>Tartalomjegyzék</h2>
+		
+		
+		
+		<ul>
+			<li><a href="#hiperhiv">Hiperhivatkozás</a></li>
+		</ul>
+		
+		
+		
+		<h2>Címsorok használata</h2>
+	    
+		<h1>Címsor1</h1>
+		<h2>Címsor2</h2>
+		<h3>Címsor3</h3>
+		<h4>Címsor4</h4>
+		<h5>Címsor5</h5>
+		<h6>Címsor6</h6>
+		
+		<hr/>
+		
+		<h2>Bekezdések használata</h2>
+		
+		<p>Bekezdés</p>
+		<p id="elsoBekezdes">
+		Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit. Morbi varius enim eu lorem <strong>pellentesque</strong>, at consequat risus venenatis. Cras faucibus porttitor convallis.
+		Cras enim ex, sodales non volutpat vel, ornare <i>vestibulum</i> dui. Sed quis magna leo. <em>Suspendisse</em> quis tempus justo. Suspendisse laoreet, nibh et dictum consectetur, 
+		urna quam elementum metus, nec iaculis leo lectus non ipsum. Nunc sed dolor tortor. Morbi volutpat est in massa interdum, et scelerisque tellus rhoncus. Nunc varius
+		eu nisl nec interdum. <u>Suspendisse</u> sollicitudin urna metus, vel pellentesque massa ornare at. Nunc pharetra bibendum maximus. Cras at molestie elit. Maecenas eleifend
+		maximus diam eleifend ullamcorper. Maecenas non nunc arcu.
+		</p>
+		
+		<br>
+		
+		<p>
+		<span>Nam condimentum erat id hendrerit tincidunt.</span> Etiam finibus accumsan porttitor. Duis facilisis luctus velit, quis ultricies velit mattis ac. Proin sem mauris, convallis
+		ut ullamcorper ut, gravida quis quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla nec lorem blandit purus tempus mollis ut
+		vel odio. Morbi tincidunt porttitor mollis. Fusce placerat nulla sit amet quam vestibulum, eu dignissim nisl varius. Aenean porta tellus orci, posuere faucibus erat feugiat at.
+		Nulla ullamcorper fermentum tempor. Curabitur diam tortor, commodo a nisi non, eleifend suscipit ante. Suspendisse nec purus dolor. Quisque sit amet lobortis nulla. Etiam dictum
+		elit quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ut ante porta, tincidunt sem eu, dictum arcu.
+		</p>
+		
+		<hr/>
+		
+		<h2>Felsorolás</h2>
+		
+	    <!-- <ul type="square"> -->
+		
+		<ul class="felsorolas">
+			<li>szimbólumos lista1</li>
+			<li>szimbólumos lista2</li>
+			<li>szimbólumos lista3</li>
+			<li>szimbólumos lista4</li>
+		</ul>
+		
+		<!-- <ol type="I"> -->
+		<ol>
+			<li>számozott lista1</li>
+			<li>számozott lista2</li>
+				<ul class="felsorolas">
+					<li>szimbólumos lista1</li>
+					<li>szimbólumos lista2</li>
+					<li>szimbólumos lista3</li>
+					<li>szimbólumos lista4</li>
+				</ul>
+			<li>számozott lista3</li>
+			<li>számozott lista4</li>
+		</ol>	
+		
+		
+		<hr/>
+		
+		
+		<h2>Képek</h2>
+		
+		<!-- <a href="kepek/tajkep.jpg"> -->
+		<figure>
+		<img src="./kepek/tajkep.jpg" alt="Tájkép" title="Tájkép" width="500"/>
+		<figcaption> Tájkép </figcaption>
+		</figure>
+		<!-- </a> -->
+		
+		<hr/>
+		
+		
+		<h2 id="hiperhiv">Hiperhivatkozás</h2>
+		
+		
+		<p>Szöveg
+		    <!-- <a href="https://google.com">Kattintson rám!</a> -->
+		    <a href="kepek/tajkep.jpg" target="_blank" >Kattintson rám!</a>
+	    </p>
+		
+		<hr/>
+		
+		<h2>Táblázat</h2>
+		<table border="1">
+		
+		<caption>Tábla neve</caption>
+		<thead>
+			<tr>
+				<th>Első oszlop</th>
+				<th>Második oszlop</th>
+				<th>Harmadik oszlop</th>
+				<th>Negyedik oszlop</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="3">
+				A
+				
+				B
+				
+				C
+				</td>
+				<td>
+				1
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">
+				D	G
+				</td>
+				<td>
+				E
+				</td>
+				<td colspan="2" rowspan="2">
+				F	2	I 	3
+				</td>
+		    </tr>
+			<tr>	
+				<td>
+				H
+				</td>
+			</tr>
+		</tbody>
+		</table>
+		<table border="1">
+			<tr>	
+				<td>
+				A
+				</td>
+				<td>
+				B
+				</td>
+				<td>
+				C
+				</td>
+				<td>
+				1
+				</td>
+			</tr>
+			<tr>	
+				<td>
+				D
+				</td>
+				<td>
+				E
+				</td>
+				<td>
+				F
+				</td>
+				<td>
+				2
+				</td>
+			</tr>
+			<tr>	
+				<td>
+				G
+				</td>
+				<td>
+				H
+				</td>
+				<td>
+				I
+				</td>
+				<td>
+				3
+				</td>
+			</tr>
+			
+		</table>
+		<br>
+		
+		<hr/>
+		
+		<h2>Házi feladat</h2>
+		
+		<br>
+		
+		<table border="1">
+			<tr>	
+				<td>
+				1
+				</td>
+				<td rowspan="3">
+				X
+				</td>
+				<td>
+				X
+				</td>
+				<td>
+				X
+				</td>
+				<td rowspan="2">
+				X
+				</td>
+			</tr>
+			<tr>	
+				<td>
+				2
+				</td>
+				<td rowspan="2" colspan="2">
+				X
+				</td>
+				
+			</tr>
+			<tr>	
+				<td rowspan="3">
+				3
+				</td>
+
+				<td>
+				X
+				</td>
+			</tr>
+			<tr>	
+				<td>
+				X
+				</td>
+				<td>
+				X
+				</td>
+				<td>
+				X
+				</td>
+				<td>
+				X
+				</td>
+			</tr>
+			<tr>	
+				<td rowspan="2" colspan="3">
+				X
+				</td>
+				<td>
+				X
+				</td>
+			</tr>
+			<tr>	
+				<td>
+				6
+				</td>
+				<td>
+				X
+				</td>
+			</tr>
+			
+		</table>
+		
+		<hr/>
+		
+		<h2>Tárgyak</h2>
+		
+		<ul>
+			<li>IKT Projektmunka</li>
+			<li>Webprogramozás</li>
+			<li>Asztali alk. fejlesztése</li>
+			<li>Magyar nyelv és irodalom</li>
+			<li>Matematika</li>
+			<li>Történelem</li>
+			<li>Fizika</li>
+			<li>Angol</li>
+			<li>Szakmai Angol</li>
+			<li>Testnevelés</li>
+		</ul>
+
+		<table border="1" width=200>
+		<caption>11.C. órarend</caption>
+		<thead>
+			<tr>
+				<th>Óraszám</th>
+				<th>Hétfő</th>
+				<th>Kedd</th>
+				<th>Szerda</th>
+				<th>Csütörtök</th>
+				<th>Péntek</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>0</td>
+				<td></td>
+				<td></td>
+				<td><u>Matematika</u></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Webprog</td>
+				<td>Magyar nyelv</td>
+				<td><i><b>Testnevelés</b></i></td>
+				<td>Történelem</td>
+				<td><u>Matematika</u></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Fizika</td>
+				<td>Fizika</td>
+				<td>Adatbázis</td>
+				<td>Osztályfőnöki</td>
+				<td>Asztali alkalmazások</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Angol</td>
+				<td>Asztali alk.</td>
+				<td>IKT projektmunka</td>
+				<td>Asztali alkalmazások</td>
+				<td>IKT projektmunka</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td></td>
+				<td>IKT projektmunka</td>
+				<td>Asztali alkalmazások</td>
+				<td>Magyar nyelv</td>
+				<td>Angol</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Szakmai angol</td>
+				<td>Adatbázis</td>
+				<td>Történelem</td>
+				<td>Webprog</td>
+				<td>Magyar nyelv</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Történelem</td>
+				<td><i><b>Testnevelés</b></i></td>
+				<td>Webprog</td>
+				<td>Angol</td>
+				<td>Történelem</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td><u>Matematika</u></td>
+				<td></td>
+				<td></td>
+				<td><u>Matematika</u></td>
+				<td>Szakmai angol</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><i><b>Testnevelés</b></i></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		
+		
+		
+		<hr/>
+		
+    </body>
+</html>

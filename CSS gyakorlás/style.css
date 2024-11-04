@@ -1,0 +1,158 @@
+body{
+	background-color:red;
+	margin: 0px;
+}
+
+.header{
+	background-image: url("kepek/fejlec.jpg");
+	height:450px;
+	/* background-repeat:no-repeat; */ /*(no-)repeat - (nem) ismétli a képet*/
+	background-size: 100%; /*szélességét*/
+	/* background-size: cover; */ /*maggasságát*/
+	background-attachment: fixed;
+}
+.header p{
+	margin: 0px;
+	text-align:center;
+	font-size: 40px;
+	
+	text-shadow: 3px 3px 5px black;
+	letter-spacing: 5px;
+	padding-top: 100px;
+	
+	color: beige;
+	/* color: rgb(124, 37, 0); */
+	/* color: rgba(255,0,0,0.25) */
+	/* color: rgb(16,256,11);   #10ff0b; */
+	/*color: #3f66ab       Hexadecimális: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F */
+	
+	/* 1 Byte = 8 bit */
+	/* R: G: B: */
+}
+
+
+.masodik_blokk{
+	height:450px;
+}
+
+
+.feher-hatteres{
+	background-color:lightgray;
+	width: 50%;
+	float: left;
+	height: 100%;
+	text-align: center;
+
+}
+.szoveg-kep{
+	background-color:white;
+	width: 50%;
+	float: right;
+	height: 100%;
+	
+}
+
+.feher-hatteres img{
+	/*width: 30%;	*/
+	height: 70%;
+	position: relative;
+	top: 15%; 
+	opacity: 0.7;	/* [0,1] -> [0,100%]*/
+	/*
+		15% -> 0.15
+		78.3% -> 0,783		
+	*/
+}
+
+.szoveg-kep-belso{
+	/* .szoveg-kep-belso */
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	position:relative;
+	top: 10%;
+	padding: 10px;
+	text-align: center;
+	overflow: scroll;
+}
+
+.szoveg-kep-belso img{
+	height: 50%;
+}
+
+.szoveg-kep-belso p{
+	text-align: left;
+}
+
+h2{
+	margin-top:0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.sajat{
+	background-image: url("kepek/sajat3.jpg");
+	height:450px;
+	background-size: 100%; 
+	background-attachment: fixed;
+}
+
+.sajat p{
+	margin: 0px;
+	text-align:center;
+	font-size: 40px;
+	color: beige;
+	text-shadow: 3px 3px 5px black;
+	letter-spacing: 5px;
+	padding-top: 100px;
+}
+
+.masodik_resz{
+	height:450px;
+}
+
+
+.szurke-hatter{
+	background-color:lightgray;
+	width: 50%;
+	float: right;
+	height: 100%;
+	text-align: center;
+}
+
+.szurke-hatter img{
+	height: 70%;
+	position: relative;
+	top: 15%;
+	float: center;
+}
+
+
+.szoveges{
+	background-color:white;
+	width: 50%;
+	float: left;
+	height: 100%;
+	
+}
+
+
+.szoveges-belso{
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	position:relative;
+	top: 10%;
+	padding: 10px;
+	text-align: center;
+}
+
+.szoveges-belso img{
+	height: 50%;
+}
+
+.szoveges-belso p{
+	text-align: left;
+}
